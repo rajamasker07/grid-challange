@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --color-primary-900: #004a41;
+  --color-primary-800: #00665e;
+  --color-primary-700: #00756e;
+  --color-primary-600: #00857f;
+  --color-primary-500: #00928c;
+  --color-primary-400: #00a39f;
+  --color-primary: #2bb3b1;
+  --color-primary-200: #72c9c8;
+  --color-primary-100: #acdede;
+  --color-primary-50: #def1f2;
+  --color-secondary-900: #7b7904;
+  --color-secondary-800: #949f18;
+  --color-secondary-700: #a4b722;
+  --color-secondary-600: #b3cd2b;
+  --color-secondary: #bfdf32;
+  --color-secondary-400: #c8e453;
+  --color-secondary-300: #d2e973;
+  --color-secondary-200: #def09b;
+  --color-secondary-100: #ebf5c2;
+  --color-secondary-50: #f7fbe7;
+  --color-bg: #E6EFF6;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: var(--color-bg);
+}
+
+main {
+  display: grid;
+  grid-template-rows: repeat(2, fit-content);
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 10px;
+  background-color: white;
+  width: 50vw;
+  min-height: fit-content;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.info {
+  grid-row: 1/2;
+  grid-column: 1/3;
+  padding: 20px;
+}
+
+.subscription {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  background-color: var(--color-primary-600);
+  padding: 20px;
+}
+
+.about{
+  grid-row: 2/3;
+  grid-column: 2/3;
+  background-color: var(--color-primary);
+  padding: 20px;
+}
+
+.about, .subscription{
+  color: white;
+}
+
+.title {
+  font-size: x-large;
+  margin: 20px 0;
+}
+
+.subtitle {
+  font-size: medium;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: medium;
+}
+
+[class$="-primary"] {
+  color: var(--color-primary);
+}
+
+[class$="-secondary"] {
+  color: var(--color-secondary);
+}
+
+[class$="-text"] {
+  color: rgb(99, 99, 99);
+}
+
+.display-1 {
+  font-size: xx-large;
+}
+
+.display-1 > span {
+  font-size: small;
+  color: rgb(225, 225, 225);
+}
+
+button {
+  background-color: var(--color-secondary);
+  width: 100%;
+  height: 62px;
+  color: white;
+  font-weight: 700;
+  font-size: larger;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 5px;
+  border-style: none;
+  margin: 20px 0 0 0;
+}
